@@ -1,6 +1,6 @@
 public class Journal
 {
-    public List<Entry> _entries;
+    public List<Entry> _Entries;
     
     public void AddEntry(Entry newEntry)
     {
@@ -19,6 +19,6 @@ public class Journal
 
     public void LoadFromFile(string fileName)
     {
-        
+
     }
 }
