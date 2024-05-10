@@ -1,3 +1,4 @@
+
 public class PromptGenerator
 {
     public List<string> _Prompts;
@@ -5,5 +6,10 @@ public class PromptGenerator
     public string GetPromptGenerator()
     {
         return "";
+    }
+
+    internal bool GetRandomPrompt()
+    {
+        throw new NotImplementedException();
     }
 }
