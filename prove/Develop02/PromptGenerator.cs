@@ -1,15 +1,25 @@
+using System;
+using System.Collections.Generic;
 
 public class PromptGenerator
 {
-    public List<string> _Prompts;
+    private List<string> _prompts;
 
-    public string GetPromptGenerator()
+    public PromptGenerator()
     {
-        return "";
+        _prompts = new List<string>
+        {
+            "What was the best part of your day?",
+            "Describe a challenge you faced today.",
+            "What are you grateful for today?",
+            "What are your goals for tomorrow?"
+        };
     }
 
-    internal bool GetRandomPrompt()
+    public string GetRandomPrompt()
     {
-        throw new NotImplementedException();
+        Random rnd = new Random();
+        int index = rnd.Next(_prompts.Count);
+        return _prompts[index];
     }
 }
