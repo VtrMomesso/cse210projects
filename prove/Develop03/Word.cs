@@ -26,6 +26,15 @@ class Word
 
     public string GetDisplayText()
     {
-        return _isHidden ? " _ _ _ _ " : _text;
+        if (_isHidden)
+        {
+            // Generate hidden symbol based on the length of the word
+            string hiddenSymbol = new string('_', _text.Length);
+            return hiddenSymbol;
+        }
+        else
+        {
+            return _text;
+        }
     }
 }
