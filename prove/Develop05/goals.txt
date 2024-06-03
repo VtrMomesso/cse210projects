@@ -1,0 +1,2 @@
+ChecklistGoal:Temple atendence,Go to the temple,500,0,4,5000
+Score:0
