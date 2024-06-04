@@ -20,18 +20,18 @@ class Program
         DisplayEventDetails(outdoorGathering);
     }
 
-    static void DisplayEventDetails(Event event)
+    static void DisplayEventDetails(Event eventDetails)
     {
         Console.WriteLine("Standard Details:");
-        Console.WriteLine(event.GetStandardDetails());
+        Console.WriteLine(eventDetails.GetStandardDetails());
         Console.WriteLine();
 
         Console.WriteLine("Full Details:");
-        Console.WriteLine(event.GetFullDetails());
+        Console.WriteLine(eventDetails.GetFullDetails());
         Console.WriteLine();
 
         Console.WriteLine("Short Description:");
-        Console.WriteLine(event.GetShortDescription());
+        Console.WriteLine(eventDetails.GetShortDescription());
         Console.WriteLine("============================================\n");
     }
 }
