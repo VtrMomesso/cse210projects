@@ -17,6 +17,6 @@ public class Lecture : Event
 
     public override string GetShortDescription()
     {
-        return $"Event Type: Lecture\nTitle: {title}\nDate: {date}";
+        return $"Event Type: Lecture\nTitle: {GetTitle()}\nDate: {GetDate()}";
     }
 }
