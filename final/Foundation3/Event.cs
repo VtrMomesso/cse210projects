@@ -15,6 +15,31 @@ public class Event
         this.address = address;
     }
 
+    public string GetTitle()
+    {
+        return title;
+    }
+
+    public string GetDescription()
+    {
+        return description;
+    }
+
+    public string GetDate()
+    {
+        return date;
+    }
+
+    public string GetTime()
+    {
+        return time;
+    }
+
+    public Address GetAddress()
+    {
+        return address;
+    }
+
     public virtual string GetStandardDetails()
     {
         return $"Title: {title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetFullAddress()}";
