@@ -15,6 +15,6 @@ public class OutdoorGathering : Event
 
     public override string GetShortDescription()
     {
-        return $"Event Type: Outdoor Gathering\nTitle: {title}\nDate: {date}";
+        return $"Event Type: Outdoor Gathering\nTitle: {GetTitle()}\nDate: {GetDate()}";
     }
 }
